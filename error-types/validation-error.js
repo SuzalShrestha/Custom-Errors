@@ -6,6 +6,7 @@ class ValidationError extends Error{
       Error.captureStackTrace(this, ValidationError);
     }    
     this.name = "ValidationError";
+    this.message=message;
   }
 
 }

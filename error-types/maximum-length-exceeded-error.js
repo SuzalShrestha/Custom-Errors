@@ -7,10 +7,7 @@ class MaximumLengthExceededError extends ValidationError{
     if(excessLength!==undefined){
     message=`Maximum length exceeded by ${excessLength}`;
     }
-    this.message=message;
-    if(Error.captureStackTrace){
-      Error.captureStackTrace(this, MaximumLengthExceededError);
-    }    
+    this.message=message;   
     this.name = "MaximumLengthExceededError";
   }
 }
